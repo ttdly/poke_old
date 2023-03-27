@@ -7,7 +7,7 @@ import { terser } from "rollup-plugin-terser";
 export default {
     input: 'scripts/main.js',
     output: {
-        file: 'dist/index.js',
+        file: 'dist/index.cjs',
         format: 'cjs'
     },
     plugins: [commonjs(),resolve(),json(),terser()]
