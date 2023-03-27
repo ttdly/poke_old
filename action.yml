@@ -1,0 +1,9 @@
+name: 'Poke'
+description: 'Sync discussions to markdown files'
+inputs:
+  token:
+    description: 'GitHub token'
+    default: ${{ github.token }}
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
